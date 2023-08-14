@@ -25,7 +25,7 @@ const center = document.getElementById("light_center");
 const hand = document.getElementById("Light");
 function setLightCenter() {
     hand.style.transform = "rotate( 0deg)";
-    // var bbox = document.getElementById("Lighthouse").getBoundingClientRect();
+    var bbox = document.getElementById("Lighthouse").getBoundingClientRect();
     center.style.top = "calc("+ bbox.top + "px + 5.6vw )";
     center.style.left = "calc(" + bbox.left + "px + 1.2vw )";
 };
